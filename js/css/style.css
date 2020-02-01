@@ -1,0 +1,788 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 7400px;
+}
+
+header{
+    height: 150px;
+    line-height: 150px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.secondary{
+    background-color: darkorange;
+    box-shadow: 0px 0px 30px 0px;
+    transition: all 0.8s ease-in;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+
+.logo img{
+    margin-top: 0px;
+}
+
+header nav ul li a{
+    padding-right: 50px;
+    padding-top:50px;
+    font-weight: bold;
+    font-family: cursive;
+    color: whitesmoke;
+    transition: all 0.5s ease-in;
+}
+
+header nav ul li a:hover{
+    text-decoration: none;
+    color: crimson;
+}
+
+.img1{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(..//image/hair-cut1.png);
+    background-size: 100% 100%;
+    
+}
+
+.img2{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(..//image/curl1.jpg);
+    background-size: 100% 100%;
+    
+}
+
+.img3{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,1.3)),url(..//image/banner-1.jpg);
+    background-size: 100% 100%;
+    
+}
+
+section ul li i#insta:hover{
+    color: deeppink;
+}
+
+section ul li i#twit:hover{
+    color: cornflowerblue;
+}
+
+section ul li i#fb:hover{
+    color: royalblue;
+}
+
+.slider i{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.slider, .slider ul, .slider ul li{
+    height:610px;
+    width:100%;
+    color: white;
+    text-align: center;
+}
+
+.slider h2{
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span{
+    color: orange;
+}
+
+.slider a{
+    padding: 10px, 40px;
+    margin-right: 8px;
+    background-color: orange;
+    text-emphasis-color: black;
+    font-weight: bold;
+}
+
+.slider a.btn-half:hover{
+    background-color: darkorange;
+    color: black;
+}
+
+.slider a.btn-full:hover{
+    background-color: darkorange;
+    color: black;
+}
+
+/* Upto Section One (header + Slider + transition) */
+
+.intro-area {
+    position: relative;
+    padding: 100px 0px;                                           /* padding based on TR BL */
+    text-align: center;
+    
+}
+
+.sub-heading{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before{
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 3px;
+    background-color: darkorange;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before{
+    width: 24%;
+    margin-left: -12%;
+}
+
+.sub-heading:after{
+    
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 3px;
+    background-color: cadetblue;
+}
+
+.sub-heading p{
+    color: cadetblue;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.intro-block{
+    
+    position: relative;
+    background-color: white;
+    margin: 50px 25px 0px;
+    text-align: center;
+    padding: 20px 10px 10px;
+    
+}
+
+.intro-block:hover, .intro-block.active{
+    background-color: orange;
+}
+
+
+.intro-block:hover{
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    
+}
+
+.intro-block .intro-icon{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fa{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background-color: orange;   /* inside circle without hover  */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+
+.intro-block:hover .fa, .intro-block.active .fa{    /*  inside round circle   */
+    
+    background-color: white;
+    color: orange;
+    box-shadow: 0px 0px 0px 10px orange;
+    
+}
+
+.intro-block h3{
+    font-size: 18px;
+    color: orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro-block p{
+    color: black;
+}
+
+.intro-block:hover h3, .intro-block:hover p{
+    color: white;
+}
+
+
+/*----------------------------------- _______Feature Area------------------------------______________ */
+
+.feature-area{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//image/seissors.jpg);
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.title h2,p{
+    color: whitesmoke;
+}
+
+.single-feature h3,i{
+    color: whitesmoke;
+}
+
+.single-feature{
+    position: relative;
+    width: 325px;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+    border-right: 1px solid #65c8e5;
+    border-bottom: 1px solid #65c8e5;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+
+.feature-block:after{
+    content: "";
+    display: table;
+}
+
+.feature-block:after{
+    clear: both;
+}
+
+.featured-icon{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.single-feature i.fa{
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: orange;
+    color: aliceblue;
+    width: 64px;
+    height: 64px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+
+.feature-block:hover .single-feature{
+    border-color: white;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+
+.single-feature:hover .featured-icon .fa{
+    border: 2px solid orange;
+    background: white;
+    color: darkorange;
+}
+
+.single-feature:nth-of-type(even){
+    border-right: none;
+}
+
+.single-feature:nth-of-type(3){
+    border-bottom: none;
+}
+
+.single-feature:nth-of-type(4){
+    border-bottom: none;
+}
+
+.feature-area{
+    padding: 100px 0;
+}
+
+.feature-mockup{
+    bottom: -225px;
+    position: relative;
+}
+
+.title .sub-heading p{
+    color: white;
+}
+
+
+
+
+.offer-feature-area .title h2{
+    color: black;    
+}
+
+.offer-feature-area .title .sub-heading p{
+    color: cadetblue;
+}
+
+.offer-feature-area{
+    padding: 100px 0px;
+}
+
+.feature-list ul{
+    list-style: none;
+}
+
+.feature-list li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+
+.feature-list .offer .fa{
+    color: black;
+}
+
+.feature-list .offer-details h3{
+    color: black;
+    text-transform: uppercase;
+}
+
+.feature-list .offer-details span{
+    color: black;
+    text-transform: capitalize;
+}
+
+
+.feature-list .offer-details p{
+    color: black;
+}
+
+
+.feature-list li:hover i{
+    color: white;
+    background-color: orange;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}
+
+.offer-icon{
+    position: absolute;
+    left: 0;
+}
+
+.offer-icon i{
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    font-size: 30px;
+    background: white;
+    color: orange;
+    border-radius: 50%;
+    border: 2px solid orange;
+    line-height: 63px;
+}
+
+/*---------------------------------- Testimonials Area -------------------------------------------------*/
+
+.testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(..//image/testimonialback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+    margin-top: -100px;
+}
+
+.testimonials .carousel-indicators{
+    bottom: -60px;
+}
+
+.testimonials .sub-heading p{
+    color: white;
+}
+
+
+.carousel-inner img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid darkorange;
+    padding: 5px;
+}
+
+.testimonials .carousel-indicators li.active{
+    background-color: darkorange;
+}
+
+.testimonials .carousel-indicators li{
+    border: white;
+}
+
+
+/* Upto Testimonials */
+
+.team-area{
+    padding: 100px 0px;
+}
+
+.team-area .sub-heading{
+    margin-bottom: 100px;
+    color: cadetblue;
+}
+
+.team-area .team-man{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    overflow: hidden;
+    min-height: 100px;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    border: 4px solid darkorange;
+    border-radius: 100%;
+}
+
+.team-man img{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 100%;
+}
+
+.team-block h3{
+    color: orange;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 5px;
+}
+
+.team-block h4{
+    color: hotpink;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.025px;
+}
+
+
+.team-block p{
+    color: black;
+    font-size: 14px;
+    padding: 10px 0px;
+    line-height: 20px;
+}
+
+.team-description{
+    background-color: white;
+}
+
+.team-social-network{
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+
+.team-social-network a{
+
+    margin: 0 6px;
+}
+
+.team-social-network i{
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    background: white;
+    color: whitesmoke;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding-top: 6px;
+    font-size: 30px;
+}
+
+.team-block
+{
+    text-align: center;
+    position: relative;
+}
+
+
+.team-block:hover .team-description{
+    background-color: darkorange;
+    color: white;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+
+.team-block:hover h3,
+.team-block:hover h4{
+    color: white;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    
+}
+
+.team-block:hover .team-social-network i#insta{
+    border-color: white;
+    background-color: deeppink;
+}
+
+.team-block:hover .team-social-network i#twit{
+    border-color: white;
+    background-color: cornflowerblue;
+}
+
+.team-block:hover .team-social-network i#face{
+    border-color: white;
+    background-color: royalblue;
+}
+
+
+/*------------------------------- Upto the Our team section----------------------------------- */
+/* Start Contact me Section */
+
+.contact-area{
+    padding: 300px 0;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(..//image/reception.jpg);
+    background-attachment: fixed;
+}
+
+.divider{
+    border-right: 1px solid gray;
+}
+
+.contact-area h2{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-area h3{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.contact-area h4{
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    letter-spacing: 0.025px;
+    
+}
+
+
+.contact-area span{
+    display: block;
+    color: white;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.025px;
+}
+
+.contact-area ul li{
+    overflow: hidden;
+    margin-bottom: 25px;
+    
+}
+
+.contact-area ul li:last-child{
+    margin-bottom: 0;
+}
+
+.contact-area ul li .fa{
+    float: left;
+    width: 25px;
+    color: mediumvioletred;
+    font-size: 30px;
+}
+
+.contact-area ul li .address-phone{
+    float: left;
+    width: 180px;
+    padding-left: 25px;
+    margin-top: -10px;
+}
+
+.contact-block{
+    padding-left: 25px;
+}
+
+.contact-area .form-control, .contact-area .textarea{
+    font-family: 'cursive', sans-serif;
+    background-color: azure;
+    border: 1.8px solid orange;
+    padding: 13px 15px;
+    color: black;
+    margin-bottom: 30px;
+    height: 45px;
+    font-weight: 400;
+    border-radius: 0;
+}
+
+.contact-area .form-group{
+    margin-bottom: 24px;
+}
+
+.contact-area textarea{
+    min-height: 115px;
+}
+
+.contact-area .default-btn{
+    padding: 10px;
+}
+
+/*--------------------------- upto the contact-area ----------------------------*/
+
+.google-animation{
+    background-color: azure;
+    padding-top: 100px;
+}
+
+/*__-------------------------------------------------------*/
+
+
+
+footer
+{
+    background-color: orange;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -mox-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    padding-top:10px;
+    padding-bottom:0px;
+
+}
+
+.social-icon a
+{
+    margin: 0 16px 20px 16px;
+    display: inline-block;
+}
+
+.social-icon .fa
+{
+   
+    
+    font-size: 30px;
+    color: deepskyblue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    line-height: 2;
+    border-radius:50%
+    transition: .3s;
+    border: 8px solid  #b1c9d1;
+    text-align: center;
+ 
+    
+}
+
+
+.social-icon a:hover .fa#fb
+{
+    color: white;
+    background-color: royalblue;
+    border:8px solid white;
+}
+.social-icon a:hover .fa#insta
+{
+    color: white;
+    background-color: deeppink;
+    border:8px solid white;
+}
+
+.social-icon a:hover .fa#t
+{
+    color: white;
+    background-color: deepskyblue;
+    border:8px solid white;
+}
+
+.social-icon a:hover .fa#wifi
+{
+    color: white;
+    background-color: lightseagreen;
+    border:8px solid white;
+}
+
+.social-icon a:hover .fa#yt
+{
+    color: white;
+    background-color: red;
+    border:8px solid white;
+}
+
+
+.bordernow
+{
+    width: 80px;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+
+#footer .last{
+    color: white;
+    font-weight: 500;
+}
+
+
